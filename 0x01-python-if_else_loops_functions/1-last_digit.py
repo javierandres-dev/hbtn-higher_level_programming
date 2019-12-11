@@ -6,10 +6,9 @@ if number < 0:
     digit = number % -10
 else:
     digit = number % 10
-
 if digit > 5:
     print("{}{} is {} and is greater than 5".format(intro, number, digit))
 elif digit == 0:
     print("{}{} is {} and is 0".format(intro, number, digit))
-else:
+elif digit < 6:
     print("{}{} is {} and is less than 6 and not 0".format(intro, number, digit))
