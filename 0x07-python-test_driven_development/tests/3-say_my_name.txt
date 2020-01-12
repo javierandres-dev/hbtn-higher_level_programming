@@ -1,0 +1,24 @@
+================================
+Testing Through Documentation
+How to use 3-say_my_name.py
+================================
+reStructuredText file "3-say_my_name.txt"
+This library is very simple, since it only has one function called
+"say_my_name()"
+--------------------------------
+First import "say_my_name" from the "3-say_my_name" module:
+
+::
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Function that prints My name is <first name> <last name>.
+
+::
+
+    >>> say_my_name("Javier", "Andrés")
+    My name is Javier Andrés
+
+::
+
+

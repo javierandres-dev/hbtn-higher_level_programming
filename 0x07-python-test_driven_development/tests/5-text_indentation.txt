@@ -1,0 +1,26 @@
+================================
+Testing Through Documentation
+How to use 5-text_indentation.py
+================================
+reStructuredText file "5-text_indentation.txt"
+This library is very simple, since it only has one function called
+"text_indentation()"
+--------------------------------
+First import "text_indentation" from the "5-text_indentation" module:
+
+::
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Function that prints a text with 2 new lines after each of these characters: ., ? and :
+
+::
+
+    >>> text_indentation("""Lorem Ipsum. lOrem iPsum? loRem ipSum: lorem ipsum lorem ipsum""")
+    Lorem Ipsum.
+    <BLANKLINE>
+    lOrem iPsum?
+    <BLANKLINE>
+    loRem ipSum:
+    <BLANKLINE>
+    lorem ipsum lorem ipsum
