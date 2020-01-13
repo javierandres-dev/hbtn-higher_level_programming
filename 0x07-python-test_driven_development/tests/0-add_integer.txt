@@ -19,21 +19,37 @@ the addition of a and b, a and b must be integers or floats.
 
     >>> add_integer(8, 16)
     24
+    >>> add_integer(100.3, -2)
+    98
+    >>> add_integer(-100, 2.2)
+    -98
+    >>> add_integer(-8, -8)
+    -16
+    >>> add_integer((2))
+    100
 
-a must be integer or float, otherwise raise a TypeError exception
-with the message a must be an integer
+a and b must be integers or floats, otherwise raise a TypeError exception
+with the message a must be an integer or b must be an integer
 
 ::
 
-    >>> add_integer('x', 16)
+    >>> add_integer('string', 16)
     Traceback (most recent call last):
+    ...
     TypeError: a must be an integer
-
-b must be integer or float, otherwise raise a TypeError exception
-with the message b must be an integer
-
-::
-
-    >>> add_integer(8, 'x')
+    >>> add_integer(8, 'string')
     Traceback (most recent call last):
+    ...
     TypeError: b must be an integer
+    >>> add_integer('c', 'string')
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+    >>> add_integer()
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'

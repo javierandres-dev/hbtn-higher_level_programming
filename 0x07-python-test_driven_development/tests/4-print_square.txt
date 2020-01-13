@@ -8,13 +8,10 @@ This library is very simple, since it only has one function called
 --------------------------------
 First import "print_square" from the "4-print_square" module:
 
-::
-
     >>> print_square = __import__('4-print_square').print_square
 
-Function that prints a square with the character #.
-
 ::
+Function that prints a square with the character #.
 
     >>> print_square(4)
     ####
@@ -23,5 +20,18 @@ Function that prints a square with the character #.
     ####
 
 ::
+size must be an integer, otherwise raise a TypeError
+exception with the message size must be an integer
 
+    >>> print_square('x')
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
 
+::
+No argument
+
+    >>> print_square()
+    Traceback (most recent call last):
+    ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
