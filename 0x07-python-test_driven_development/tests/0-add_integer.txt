@@ -37,11 +37,15 @@ with the message a must be an integer or b must be an integer
     Traceback (most recent call last):
     ...
     TypeError: a must be an integer
+    >>> add_integer('8', 16)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
     >>> add_integer(8, 'string')
     Traceback (most recent call last):
     ...
     TypeError: b must be an integer
-    >>> add_integer(1, '2')
+    >>> add_integer(8, '16')
     Traceback (most recent call last):
     ...
     TypeError: b must be an integer
@@ -49,6 +53,10 @@ with the message a must be an integer or b must be an integer
     Traceback (most recent call last):
     ...
     TypeError: a must be an integer
+    >>> add_integer(float(2**1023), float(2**1023))
+    Traceback (most recent call last):
+    ...
+    OverflowError: overflow error
     >>> add_integer(None)
     Traceback (most recent call last):
     ...
