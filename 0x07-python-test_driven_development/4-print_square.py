@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def print_square(size):
     """ Function that prints a square with the character # """
     if type(size) == int and size >= 0:
