@@ -41,6 +41,10 @@ with the message a must be an integer or b must be an integer
     Traceback (most recent call last):
     ...
     TypeError: b must be an integer
+    >>> add_integer(1, '2')
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
     >>> add_integer('c', 'string')
     Traceback (most recent call last):
     ...
