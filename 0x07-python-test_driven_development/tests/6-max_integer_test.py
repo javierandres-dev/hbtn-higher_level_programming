@@ -22,11 +22,11 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_greater(self):
         """ find greater - max at the beginning """
-        self.assertAlmostEqual(max_integer([2, 1, 0, -1, -2]), 2)
+        self.assertAlmostEqual(max_integer([2, 1]), 2)
 
     def test_greater(self):
         """ find greater - max in the middle """
-        self.assertAlmostEqual(max_integer([-1, -2, 3, 2, 1]), 3)
+        self.assertAlmostEqual(max_integer([1, 3, 2]), 3)
 
     def test_greater(self):
         """ find greater - max at the end """
