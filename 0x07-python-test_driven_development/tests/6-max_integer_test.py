@@ -17,8 +17,20 @@ class TestMaxInteger(unittest.TestCase):
         self.assertAlmostEqual(max_integer([-1, -2, -3, 4, 3, 2, 1]), 4)
 
     def test_greater(self):
-        """ find greater - max at the end” """
+        """ find greater - max at the end """
         self.assertAlmostEqual(max_integer([-4, -3, -2, -1, 0, 1, 2, 3, 4]), 4)
+
+    def test_greater(self):
+        """ find greater - one negative number in the list """
+        self.assertAlmostEqual(max_integer([-1, 0, 1, 2, 3, 4]), 4)
+
+    def test_greater(self):
+        """ find greater - only negative numbers in the list """
+        self.assertAlmostEqual(max_integer([-4, -3, -2, -1]), -1)
+
+    def test_greater(self):
+        """ find greater - list of one element """
+        self.assertAlmostEqual(max_integer([1]), 1)
 
     def test_empty(self):
         """ find greater - list is empty  """
