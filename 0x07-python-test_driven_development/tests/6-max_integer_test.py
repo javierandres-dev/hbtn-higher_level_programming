@@ -9,13 +9,21 @@ max_integer = __import__('6-max_integer').max_integer
 class TestMaxInteger(unittest.TestCase):
     """ methods for testing the function 'max_integer()' """
     def test_greater(self):
-        """ find greater  """
-        self.assertAlmostEqual(max_integer([-2, -1, 0, 1, 2, 3, 4]), 4)
+        """ find greater - max at the beginning """
+        self.assertAlmostEqual(max_integer([4, 3, 2, 1, 0, -1, -2, -3, -4]), 4)
+
+    def test_greater(self):
+        """ find greater - max in the middle """
+        self.assertAlmostEqual(max_integer([-1, -2, -3, 4, 3, 2, 1]), 4)
+
+    def test_greater(self):
+        """ find greater - max at the end” """
+        self.assertAlmostEqual(max_integer([-4, -3, -2, -1, 0, 1, 2, 3, 4]), 4)
 
     def test_empty(self):
-        """ find empty  """
+        """ find greater - list is empty  """
         self.assertAlmostEqual(max_integer(), None)
 
     def test_null(self):
-        """ find null  """
+        """ find greater- list null  """
         self.assertAlmostEqual(max_integer([None]), None)
