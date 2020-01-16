@@ -1,2 +1,1 @@
-#!/usr/bin/python3
-test whether two variables refer to the same thing
+True
