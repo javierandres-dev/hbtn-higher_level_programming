@@ -14,12 +14,13 @@ class Student:
             public method that retrieves a dictionary representation
             of a Student instance (same as 10-class_to_json.py)
         """
-        if attrs is not None:
-            dic = {}
-            for i, value in self.__dict__.items():
-                for j in attrs:
-                    if i == j:
-                        dic.update({i: j})
-            return dic
-        else:
+        if not isinstance(attrs, list):
             return self.__dict__
+        for i in attrs:
+            if not isinstance(i, str):
+                return self.__dict__
+        dic = {}
+        for j in attrs:
+            if j in self.__dict__.keys():
+                dic[j] = self.__dict__[j]
+        return dic
