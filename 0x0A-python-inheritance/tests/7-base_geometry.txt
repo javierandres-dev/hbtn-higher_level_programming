@@ -13,22 +13,90 @@ First import "" from the "" module:
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("my_int", 12)
     >>> bg.integer_validator("width", 89)
+
+::
+
+    >>> bg.area()
+    Traceback (most recent call last):
+    ...
+    Exception: area() is not implemented
+
     >>> bg.integer_validator("name", "John")
     Traceback (most recent call last):
     ...
     TypeError: name must be an integer
+
     >>> bg.integer_validator("age", 0)
     Traceback (most recent call last):
     ...
     ValueError: age must be greater than 0
+
     >>> bg.integer_validator("distance", -4)
     Traceback (most recent call last):
     ...
     ValueError: distance must be greater than 0
 
-::
-
     >>> bg.integer_validator()
     Traceback (most recent call last):
     ...
     TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+    >>> bg.integer_validator(1)
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+    >>> bg.integer_validator(1, 1.2)
+    Traceback (most recent call last):
+    ...
+    ValueError: Unknown format code 's' for object of type 'int'
+
+    >>> bg.integer_validator(1, "my_int")
+    Traceback (most recent call last):
+    ...
+    ValueError: Unknown format code 's' for object of type 'int'
+
+    >>> bg.integer_validator([1, 2], "my_int")
+    Traceback (most recent call last):
+    ...
+    TypeError: non-empty format string passed to object.__format__
+
+    >>> bg.integer_validator("my_int", 1.2)
+    Traceback (most recent call last):
+    ...
+    TypeError: my_int must be an integer
+
+    >>> bg.integer_validator("my_int", [1, 2])
+    Traceback (most recent call last):
+    ...
+    TypeError: my_int must be an integer
+
+    >>> bg.integer_validator(distance, -4)
+    Traceback (most recent call last):
+    ...
+    NameError: name 'distance' is not defined
+
+    >>> bg.integer_validator("distance", value)
+    Traceback (most recent call last):
+    ...
+    NameError: name 'value' is not defined
+
+    >>> bg.integer_validator("my_int", True)
+    Traceback (most recent call last):
+    ...
+    TypeError: my_int must be an integer
+
+    >>> bg.integer_validator("my_int", {3, 4})
+    Traceback (most recent call last):
+    ...
+    TypeError: my_int must be an integer
+
+    >>> bg.integer_validator("my_int", None)
+    Traceback (most recent call last):
+    ...
+    TypeError: my_int must be an integer
+
+    >>> bg.integer_validator("my_int", (4,))
+    Traceback (most recent call last):
+    ...
+    TypeError: my_int must be an integer
