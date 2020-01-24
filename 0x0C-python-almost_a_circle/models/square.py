@@ -25,3 +25,13 @@ class Square(Rectangle):
         """ overriding the __str__ method """
         return ('[Square] ({:d}) {:d}/{:d} - {:d}'
                 .format(self.id, self.x, self.y, self.size))
+
+    def update(self, *args, **kwargs):
+        """ public method that assigns attributes """
+        list_attr = ['id', 'size', 'x', 'y']
+        if args:
+            for i in range(len(args)):
+                setattr(self, list_attr[i], args[i])
+        elif kwargs:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
