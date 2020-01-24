@@ -80,3 +80,14 @@ class Rectangle(Base):
             value of the Rectangle instance
         """
         return self.width * self.height
+
+    def display(self):
+        """
+            method public that prints in stdout
+            the Rectangle instance with the character #
+        """
+        for i in range(self.height):
+            print('' * self.x, end='')
+            for j in range(self.width):
+                print('#', end='')
+            print('')
