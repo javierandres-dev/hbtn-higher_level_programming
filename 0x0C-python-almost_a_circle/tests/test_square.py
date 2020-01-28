@@ -5,6 +5,8 @@
 """
 import unittest
 import pep8
+from models.base import Base
+from models.rectangle import Rectangle
 from models.square import Square
 
 class verify_pep8(unittest.TestCase):
@@ -18,9 +20,9 @@ class verify_work(unittest.TestCase):
     """ funcionality test """
 
     def setUp(self):
-        """ method raises an exception while the test is running """
+        """ Method called immediately before calling the test method """
         Base._Base__nb_objects = 0
 
     def tearDown(self):
-        """ method that tidies up after the test method has been run """
+        """ Method called immediately after calling the test method """
         pass

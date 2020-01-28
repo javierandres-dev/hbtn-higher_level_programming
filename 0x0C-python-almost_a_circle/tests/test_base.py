@@ -6,6 +6,8 @@
 import unittest
 import pep8
 from models.base import Base
+from models.rectangle import Rectangle
+from models.square import Square
 
 class verify_pep8(unittest.TestCase):
     """ class - PEP 8 validated """
@@ -18,24 +20,16 @@ class verify_work(unittest.TestCase):
     """ funcionality test """
 
     def setUp(self):
-        """ method raises an exception while the test is running """
-        self.b1 = Base()
-        self.b2 = Base()
-        self.b3 = Base()
-        self.b4 = Base(12)
-        self.b5 = Base()
+        """ Method called immediately before calling the test method """
+        Base._Base__nb_objects = 0
 
     def tearDown(self):
-        """ method that tidies up after the test method has been run """
+        """ Method called immediately after calling the test method """
         pass
 
     def test_id(self):
         """ test predefined cases """
-        self.assertEqual(self.b1.id, 13)
-        self.assertEqual(self.b2.id, 14)
-        self.assertEqual(self.b3.id, 15)
-        self.assertEqual(self.b4.id, 12)
-        self.assertEqual(self.b5.id, 16)
+        pass
 
     def test_0(self):
         """ test zero case """
@@ -44,13 +38,13 @@ class verify_work(unittest.TestCase):
 
     def test_neg(self):
         """ test negative case """
-        self.b1 = Base(-2)
-        self.assertEqual(self.b1.id, -2)
+        self.b1 = Base(-1)
+        self.assertEqual(self.b1.id, -1)
 
     def test_float(self):
         """ test the float case """
-        self.b1 = Base(2.5)
-        self.assertEqual(self.b1.id, 2.5)
+        self.b1 = Base(1.2)
+        self.assertEqual(self.b1.id, 1.2)
 
     def test_str(self):
         """ test string case """
