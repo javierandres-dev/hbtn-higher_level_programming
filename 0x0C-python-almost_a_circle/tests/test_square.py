@@ -1,9 +1,10 @@
 #!/usr/bin/python3
+""" shebang line - defines where the interpreter is located """
+import unittest
 """
     unittest — Unit testing framework
     tests for class Square
 """
-import unittest
 import pep8
 from models.base import Base
 from models.rectangle import Rectangle
