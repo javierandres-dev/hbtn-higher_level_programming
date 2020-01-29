@@ -40,13 +40,11 @@ class Base:
              representation of list of instances who inherits of Base
         """
         my_list = []
-        if list_objs is None:
-            return my_list
-        else:
+        if list_objs:
             for i in list_objs:
                 my_list.append(i.to_dictionary())
         r = cls.to_json_string(my_list)
-        with open('{}.json'.format(cls.__name__),
+        with open('{:s}.json'.format(cls.__name__),
                   mode='w', encoding='utf-8') as f:
             f.write(r)
 
