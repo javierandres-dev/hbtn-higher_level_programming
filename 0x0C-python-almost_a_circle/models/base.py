@@ -79,11 +79,11 @@ class Base:
         """ class method that returns a list of instances """
         my_list = []
         filename = cls.__name__ + '.json'
-        if filename is None:
-            return my_list
-        else:
+        try:
             with open(filename, mode='r', encoding='utf-8') as f:
                 r = cls.from_json_string(f.read())
                 for i in r:
                     my_list.append(cls.create(**i))
-                return my_list
+        except:
+            pass
+        return my_list
