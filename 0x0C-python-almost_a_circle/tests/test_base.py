@@ -65,6 +65,3 @@ class verify_work(unittest.TestCase):
         """ test dictionary case """
         self.b1 = Base({'a': 1, 'b': 2})
         self.assertEqual(self.b1.id, {'a': 1, 'b': 2})
-
-if __name__ == "__main__":
-    unittest.main()

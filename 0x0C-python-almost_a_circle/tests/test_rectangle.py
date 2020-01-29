@@ -46,6 +46,3 @@ class verify_work(unittest.TestCase):
     def test_y(self):
         """ test y cases """
         pass
-
-if __name__ == "__main__":
-    unittest.main()
