@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Python """
+""" shebang line - defines where the interpreter is located """
 import json
 """ import module """
 

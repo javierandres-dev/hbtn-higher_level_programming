@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Python """
+""" shebang line - defines where the interpreter is located """
 from models.base import Base
 """ import module """
 
