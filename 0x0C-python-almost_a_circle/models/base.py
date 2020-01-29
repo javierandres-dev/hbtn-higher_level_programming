@@ -79,7 +79,7 @@ class Base:
         """ class method that returns a list of instances """
         my_list = []
         filename = cls.__name__ + '.json'
-        if filename == '':
+        if filename is None:
             return my_list
         else:
             with open(filename, mode='r', encoding='utf-8') as f:
