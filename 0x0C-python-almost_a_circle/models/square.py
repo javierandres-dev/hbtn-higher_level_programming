@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Python """
 from models.rectangle import Rectangle
 """ import module """
 
