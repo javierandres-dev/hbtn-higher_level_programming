@@ -28,12 +28,10 @@ class Base:
             static method that returns the JSON
             string representation of list of dictionaries
         """
-        my_list = []
         if list_dictionaries is None or list_dictionaries == '':
-            return my_list
+            return "[]"
         else:
-            my_list = json.dumps(list_dictionaries)
-            return my_list
+            return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):
