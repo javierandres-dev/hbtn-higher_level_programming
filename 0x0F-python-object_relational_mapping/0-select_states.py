@@ -12,9 +12,17 @@ conn = MySQLdb.connect(
     charset="utf8"
 )
 cur = conn.cursor()
-cur.execute("SELECT * FROM states ORDER BY id ASC")
-query_rows = cur.fetchall()
+try:
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    query_rows = cur.fetchall()
+except MySQLdb.Error:
+    try:
+        print ("MySQLdb Error")
+    except IndexError:
+        print ("MySQLdb Error - IndexError")
 for row in query_rows:
     print(row)
 cur.close()
+""" Close all cursors """
 conn.close()
+""" Close all databases """
