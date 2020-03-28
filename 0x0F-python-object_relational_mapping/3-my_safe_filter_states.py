@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """ shebang line - defines where the interpreter is located """
 """
-    script that takes in an argument and displays all values
-    in the states table of hbtn_0e_0_usa where name matches the argument.
+    write one script that is safe from MySQL injections!
 """
 from sys import argv
 """ module to use command line arguments """
@@ -22,9 +21,9 @@ if __name__ == "__main__":
     try:
         search = argv[4]
         stmt = """
-        SELECT * FROM states WHERE name='{:s}' ORDER BY id ASC;
-        """.format(search)
-        cur.execute(stmt)
+        SELECT * FROM states WHERE name = %s ORDER BY id ASC;
+        """
+        cur.execute(stmt, (search,))
         query_rows = cur.fetchall()
     except MySQLdb.Error:
         try:
