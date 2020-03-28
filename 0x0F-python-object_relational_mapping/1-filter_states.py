@@ -4,14 +4,16 @@
     script that lists all states with a name starting with N
     (upper N) from the database hbtn_0e_0_usa
 """
+from sys import argv
+""" module to receive arguments """
 import MySQLdb
 """ module to connect to a MySQL database and execute SQL queries. """
 conn = MySQLdb.connect(
     host="localhost",
     port=3306,
-    user="root",
-    passwd="root",
-    db="hbtn_0e_0_usa",
+    user=argv[1],
+    passwd=argv[2],
+    db=argv[3],
     charset="utf8"
 )
 cur = conn.cursor()
