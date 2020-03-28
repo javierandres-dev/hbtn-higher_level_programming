@@ -17,9 +17,10 @@ if __name__ == "__main__":
         rtn = cur.fetchall()
     except MySQLdb.Error:
         try:
-            print ("MySQLdb Error")
+            trn = ("MySQLdb Error")
         except IndexError:
-            print ("MySQLdb Error - IndexError")
+            rtn = ("MySQLdb Error - IndexError")
     for i in rtn:
         print(i)
+    cur.close()
     conn.close()
