@@ -17,7 +17,7 @@ if __name__ == "__main__":
     )
     cur = conn.cursor()
     stmt = """
-    SELECT * FROM states ORDER BY states.id ASC ;
+    SELECT id, name FROM states ORDER BY states.id ASC ;
     """
     cur.execute(stmt)
     for i in cur:
