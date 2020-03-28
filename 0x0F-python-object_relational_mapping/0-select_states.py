@@ -11,9 +11,16 @@ if __name__ == "__main__":
         db=argv[3],
         charset="utf8")
     cur = conn.cursor()
-    stmt = "SELECT * FROM states ORDER BY states.id ASC"
-    cur.execute(stmt)
-    rtn = cur.fetchall()
+    try:
+        stmt = "SELECT * FROM states ORDER BY states.id ASC"
+        cur.execute(stmt)
+        rtn = cur.fetchall()
+    except MySQLdb.Error:
+        try:
+            print ("MySQLdb Error")
+        except IndexError:
+            print ("MySQLdb Error - IndexError")
     for i in rtn:
         print(i)
+    cur.close()
     conn.close()
