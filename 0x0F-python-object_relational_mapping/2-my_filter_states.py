@@ -17,7 +17,7 @@ if __name__ == "__main__":
     try:
         search = argv[4]
         stmt = """
-        SELECT * FROM states WHERE name='{:s}' ORDER BY id ASC;
+        SELECT * FROM states WHERE name LIKE BINARY '{:s}' ORDER BY id ASC;
         """.format(search)
         cur.execute(stmt)
         rtn = cur.fetchall()
