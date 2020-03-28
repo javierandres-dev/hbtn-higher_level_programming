@@ -18,7 +18,7 @@ if __name__ == "__main__":
     cur = conn.cursor()
     try:
         stmt = """
-        SELECT * FROM states;
+        SELECT * FROM states ORDER BY id ASC;
         """
         cur.execute(stmt)
         query_rows = cur.fetchall()
