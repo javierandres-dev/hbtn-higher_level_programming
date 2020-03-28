@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" shebang line - defines where the interpreter is located """
 """ script that lists all states from the database hbtn_0e_0_usa """
 from sys import argv
 """ module to receive arguments """
@@ -19,8 +20,7 @@ if __name__ == "__main__":
     SELECT * FROM states ORDER BY states.id ASC ;
     """
     cur.execute(stmt)
-    rtn = cur.fetchall()
-    for i in rtn:
+    for i in cur:
         print(i)
     cur.close()
     """ Close all cursors """
