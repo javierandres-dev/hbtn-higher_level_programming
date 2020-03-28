@@ -16,19 +16,13 @@ if __name__ == "__main__":
         charset="utf8"
     )
     cur = conn.cursor()
-    try:
-        stmt = """
-        SELECT * FROM states;
-        """
-        cur.execute(stmt)
-        rtn = cur.fetchall()
-    except MySQLdb.Error:
-        try:
-            print ("MySQLdb Error")
-        except IndexError:
-            print ("MySQLdb Error - IndexError")
-    for row in rtn:
-        print(row)
+    stmt = """
+    SELECT * FROM states;
+    """
+    cur.execute(stmt)
+    rtn = cur.fetchall()
+    for i in rtn:
+        print(i)
     cur.close()
     """ Close all cursors """
     conn.close()
