@@ -4,27 +4,32 @@
 from sys import argv
 """ module to receive arguments """
 import MySQLdb
-""" module to connect to a MySQL database and execute SQL queries. """
-conn = MySQLdb.connect(
-    host="localhost",
-    port=3306,
-    user=argv[1],
-    passwd=argv[2],
-    db=argv[3],
-    charset="utf8"
-)
-cur = conn.cursor()
-try:
-    cur.execute("SELECT * FROM states ORDER BY id ASC")
-    query_rows = cur.fetchall()
-except MySQLdb.Error:
+""" module to connect to a MySQL database and execute SQL statements """
+if __name__ == "__main__":
+    """ execute only if run as a sript """
+    conn = MySQLdb.connect(
+        host="localhost",
+        port=3306,
+        user=argv[1],
+        passwd=argv[2],
+        db=argv[3],
+        charset="utf8"
+    )
+    cur = conn.cursor()
     try:
-        print ("MySQLdb Error")
-    except IndexError:
-        print ("MySQLdb Error - IndexError")
-for row in query_rows:
-    print(row)
-cur.close()
-""" Close all cursors """
-conn.close()
-""" Close all databases """
+        stmt = """
+        SELECT * FROM states;
+        """
+        cur.execute(stmt)
+        query_rows = cur.fetchall()
+    except MySQLdb.Error:
+        try:
+            print ("MySQLdb Error")
+        except IndexError:
+            print ("MySQLdb Error - IndexError")
+    for row in query_rows:
+        print(row)
+    cur.close()
+    """ Close all cursors """
+    conn.close()
+    """ Close all databases """
