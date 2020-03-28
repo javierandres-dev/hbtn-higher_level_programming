@@ -22,5 +22,4 @@ if __name__ == "__main__":
             print ("MySQLdb Error - IndexError")
     for i in rtn:
         print(i)
-    #cur.close()
     conn.close()
