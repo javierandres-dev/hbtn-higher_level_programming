@@ -12,12 +12,12 @@ if __name__ == "__main__":
         charset="utf8")
     cur = conn.cursor()
     try:
-        stmt = "SELECT * FROM states ORDER BY states.id ASC"
+        stmt = "SELECT * FROM states ORDER BY id ASC"
         cur.execute(stmt)
         rtn = cur.fetchall()
     except MySQLdb.Error:
         try:
-            trn = ("MySQLdb Error")
+            rtn = ("MySQLdb Error")
         except IndexError:
             rtn = ("MySQLdb Error - IndexError")
     for i in rtn:
