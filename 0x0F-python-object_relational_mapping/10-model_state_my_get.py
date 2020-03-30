@@ -21,7 +21,7 @@ if __name__ == "__main__":
     stmt = session.query(State).filter_by(
         name=arg).order_by(asc(State.id)).one_or_none()
     if stmt:
-        print("{}".format(stmt.id))
+        print("{:d}".format(stmt.id))
     else:
         print("Not found")
     session.close()
