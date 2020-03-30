@@ -19,10 +19,5 @@ if __name__ == "__main__":
     session = start()
     session.add(arg)
     session.commit()
-    stmt = session.query(State).filter_by(
-        name=arg).first()
-    if stmt:
-        print("{}".format(stmt.id))
-    else:
-        print("Not found")
+    print(arg.id)
     session.close()
