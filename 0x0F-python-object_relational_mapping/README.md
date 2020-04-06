@@ -5,7 +5,7 @@ Foundations - Higher-level programming ― Python
 by _Guillaume_
 
 ## Learning Objectives
-######Background Context
+###### Background Context
 In this project, you will link two amazing worlds: Databases and Python!
 
 In the first part, you will use the module MySQLdb to connect to a MySQL database and execute your SQL queries.
