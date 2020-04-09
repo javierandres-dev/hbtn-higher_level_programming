@@ -26,6 +26,7 @@ At the end of this project, you are expected to be able to...
 * [x] 274 0x0E. SQL - More queries
 * [x] 263 0x00. AirBnB clone - The console
 * [x] 268 0x01. AirBnB clone - Web static
+* [x] 299 0x10. Python - Network #0
 
 ## Developer
 Javier Andrés Garzón Patarroyo
