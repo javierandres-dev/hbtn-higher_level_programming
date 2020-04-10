@@ -32,16 +32,16 @@ by _Guillaume_
   - [HTTP headers](https://medium.com/@bilalak90/http-headers-101-5392a7eff87b#.xj9rmyxhp)
 
 ## Tasks
-* [ ] 0. cURL body size
-* [ ] 1. cURL to the end
-* [ ] 2. cURL Method
-* [ ] 3. cURL only methods
-* [ ] 4. cURL headers
-* [ ] 5. cURL POST parameters
-* [ ] 6. Find a peak
-* [ ] 7. Only status code
-* [ ] 8. cURL a JSON file
-* [ ] 9. Catch me if you can!
+* [x] 0. cURL body size
+* [x] 1. cURL to the end
+* [x] 2. cURL Method
+* [x] 3. cURL only methods
+* [x] 4. cURL headers
+* [x] 5. cURL POST parameters
+* [x] 6. Find a peak
+* [x] 7. Only status code
+* [x] 8. cURL a JSON file
+* [x] 9. Catch me if you can!
 
 ## Developer
 Javier Andrés Garzón Patarroyo
