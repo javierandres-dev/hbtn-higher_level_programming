@@ -43,6 +43,7 @@ by _Guillaume_
 * [JavaScript Semi-Standard Style](https://github.com/standard/semistandard)
 * [process.argv](https://nodejs.org/api/process.html#process_process_argv)
 * [Simple Intro to NodeJS Module Scope](http://51elliot.blogspot.com/2012/01/simple-intro-to-nodejs-module-scope.html)
+* [Quick tutorial: adjust JavaScript indentation in emacs](https://medium.com/@elaine.yeung/quick-tutorial-adjust-javascript-indentation-in-emacs-f47f6e82d586)
 
 ## Tasks
 * [ ] 0. First constant, first print
