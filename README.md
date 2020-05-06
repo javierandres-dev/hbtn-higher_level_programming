@@ -28,7 +28,7 @@ At the end of this project, you are expected to be able to...
 * [x] 268 0x01. AirBnB clone - Web static
 * [x] 299 0x10. Python - Network #0
 * [x] 300 0x11. Python - Network #1
-* [ ] 303 0x12. Javascript - Warm up
+* [x] 303 0x12. Javascript - Warm up
 
 ## Developer
 Javier Andrés Garzón Patarroyo
