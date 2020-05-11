@@ -30,8 +30,6 @@ by _Guillaume_
 * [semicolons on top](https://github.com/standard/semistandard)
 * [AirBnB style](https://github.com/airbnb/javascript)
 * [Tips](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map?v=control)
-* []()
-* []()
 
 ## Tasks
 * [ ] 0. Rectangle #0
