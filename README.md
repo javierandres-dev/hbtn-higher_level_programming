@@ -29,7 +29,7 @@ At the end of this project, you are expected to be able to...
 * [x] 299 0x10. Python - Network #0
 * [x] 300 0x11. Python - Network #1
 * [x] 303 0x12. Javascript - Warm up
-* [ ] 304 0x13. Javascript - Objects, Scopes and Closures
+* [x] 304 0x13. Javascript - Objects, Scopes and Closures
 
 ## Developer
 Javier Andrés Garzón Patarroyo

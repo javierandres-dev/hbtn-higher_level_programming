@@ -32,20 +32,20 @@ by _Guillaume_
 * [Tips](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map?v=control)
 
 ## Tasks
-* [ ] 0. Rectangle #0
-* [ ] 1. Rectangle #1
-* [ ] 2. Rectangle #2
-* [ ] 3. Rectangle #3
-* [ ] 4. Rectangle #4
-* [ ] 5. Square #0
-* [ ] 6. Square #1
-* [ ] 7. Occurrences
-* [ ] 8. Esrever
-* [ ] 9. Log me
-* [ ] 10. Number conversion
-* [ ] 11. Factor index
-* [ ] 12. Sorted occurences
-* [ ] 13. Concat files
+* [x] 0. Rectangle #0
+* [x] 1. Rectangle #1
+* [x] 2. Rectangle #2
+* [x] 3. Rectangle #3
+* [x] 4. Rectangle #4
+* [x] 5. Square #0
+* [x] 6. Square #1
+* [x] 7. Occurrences
+* [x] 8. Esrever
+* [x] 9. Log me
+* [x] 10. Number conversion
+* [x] 11. Factor index
+* [x] 12. Sorted occurences
+* [x] 13. Concat files
 
 ## Developer
 Javier Andrés Garzón Patarroyo
