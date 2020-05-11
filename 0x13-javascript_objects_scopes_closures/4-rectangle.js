@@ -7,16 +7,19 @@ class Rectangle {
       this.height = h;
     }
   }
+
   print () {
-    for (let a = 0; a < this.height; a++) {
-      console.log("X".repeat(this.width));
+    for (let i = 0; i < this.height; i++) {
+      console.log('X'.repeat(this.width));
     }
   }
+
   rotate () {
     this.width += this.height;
     this.height = this.width - this.height;
     this.width -= this.height;
   }
+
   double () {
     this.width = this.width * 2;
     this.height = this.height * 2;
