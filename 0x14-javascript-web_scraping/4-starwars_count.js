@@ -11,7 +11,7 @@ request(apiUrl, function (error, response, body) {
     let times = 0;
     for (let i of obj.results) {
       for (let j of i.characters) {
-        if (j.indexOf('/18/') > 0) {
+        if (j.search('18') > 0) {
           times += 1;
         }
       }
