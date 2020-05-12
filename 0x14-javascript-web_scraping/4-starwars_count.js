@@ -11,7 +11,7 @@ require('request').get(apiUrl, function (error, response, body) {
     for (let i in obj) {
       let chars = obj[i].characters;
       for (let j in chars) {
-        if (chars[j].search(18) > 0) {
+        if (chars[j].indexOf('/18/') >= 0) {
           times += 1;
         }
       }
