@@ -8,10 +8,9 @@ require('request').get(apiUrl, function (error, response, body) {
   } else {
     const obj = JSON.parse(body).results;
     let times = 0;
-    for (let i in obj) {
-      let chars = obj[i].characters;
-      for (let j in chars) {
-        if (chars[j].indexOf('/18/') >= 0) {
+    for (let i of obj) {
+      for (let j of i.characters) {
+        if (j.indexOf('/18/') >= 0) {
           times += 1;
         }
       }
