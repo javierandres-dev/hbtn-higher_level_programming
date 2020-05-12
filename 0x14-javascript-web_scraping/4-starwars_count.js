@@ -4,7 +4,7 @@ the character “Wedge Antilles” is present. */
 const apiUrl = process.argv[2];
 require('request').get(apiUrl, function (error, response, body) {
   if (error) {
-    console.log(error);
+    return console.log(error);
   } else {
     const obj = JSON.parse(body).results;
     let times = 0;
