@@ -5,7 +5,7 @@ const process = require('process');
 const fs = require('fs');
 const urlReq = process.argv[2];
 const pathRes = process.argv[3];
-request(urlReq, 'UTF-8', function (err, res, data){
+request(urlReq, function (err, res, data){
   if (err == null) {
     fs.writeFile(pathRes, data, 'utf-8', function (err) {
       if (err) {
