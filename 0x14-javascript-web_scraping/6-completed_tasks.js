@@ -1,13 +1,10 @@
 #!/usr/bin/node
-// script that computes the number of tasks completed by user id.
-const apiUrl = process.argv[2];
-const req = require('request');
-req(apiUrl, function (err, res, data) {
-  if (err) {
-    console.log(err);
-  } else {
+// script that computes the number of tasks completed by user id
+const request = require('request');
+request(process.argv[2], function (error, response, body) {
+  if (error == null) {
     const myObj = {};
-    const obj = JSON.parse(data);
+    const obj = JSON.parse(body);
     for (i of obj) {
       if (i.completed === true) {
         if (myObj[i.userId] === undefined) {
