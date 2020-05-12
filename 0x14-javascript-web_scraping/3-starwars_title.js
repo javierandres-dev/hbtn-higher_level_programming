@@ -5,7 +5,7 @@ const url = 'https://swapi-api.hbtn.io/api/films/';
 const id = process.argv[2];
 const endpoint = url + id;
 const req = require('request');
-req.get(endpoint, function (err, res, data) {
+req(endpoint, function (err, res, data) {
   let code = res.statusCode;
   if (err) {
     console.log(err);
