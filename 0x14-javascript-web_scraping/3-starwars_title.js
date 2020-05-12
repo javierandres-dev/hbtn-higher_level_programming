@@ -6,11 +6,8 @@ const apiUrl = 'http://swapi-api.hbtn.io/api/films/';
 const endpoint = apiUrl + id;
 const req = require('request');
 req.get(endpoint, function (err, res, data) {
-  if (err === null) {
+  if (err) {
     const obj = JSON.parse(data);
     console.log(obj.title);
-  }
-  if (err) {
-    console.log(err);
   }
 });
