@@ -5,7 +5,7 @@ const apiUrl = process.argv[2];
 const request = require('request')
 request(apiUrl, function (error, response, body) {
   if (error) {
-    console.log(error);
+    console.error('error:', error);
   } else {
     const obj = JSON.parse(body);
     let times = 0;
