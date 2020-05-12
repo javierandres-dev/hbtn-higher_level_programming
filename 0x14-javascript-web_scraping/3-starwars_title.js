@@ -9,7 +9,7 @@ req.get(endpoint, function (err, res, data) {
   let code = res.statusCode;
   if (code === 200) {
     const obj = JSON.parse(data);
-    console.log(obj['title']);
+    console.log(obj.title);
   }
   if (err) {
     console.log(err);
