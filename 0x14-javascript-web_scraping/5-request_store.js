@@ -1,13 +1,16 @@
 #!/usr/bin/node
 // script that gets the contents of a webpage and stores it in a file.
+const request = require('request');
+const process = require('process');
+const fs = require('fs');
 const urlReq = process.argv[2];
 const pathRes = process.argv[3];
-const req = require('request');
-const fs = require('fs');
-req(urlReq, 'UTF-8', function (err, res, data){
-  if (err) {
-    console.log(err);
-  } else {
-    fs.writeFileSync(pathRes, data);
+request(urlReq, 'UTF-8', function (err, res, data){
+  if (err == null) {
+    fs.writeFile(pathRes, data, 'utf-8', function (err) {
+      if (err) {
+        console.log(err);
+      }
+    });
   }
 });
