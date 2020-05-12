@@ -6,11 +6,10 @@ require('request').get(apiUrl, function (error, response, body) {
   if (error) {
     console.log(error);
   } else {
-    const obj = JSON.parse(body);
-    const res = obj.results;
+    const obj = JSON.parse(body).results;
     let times = 0;
-    for (i of res) {
-      for (j of i.characters) {
+    for (let i of obj) {
+      for (let j of i.characters) {
         if (j.includes('18')) {
           times += 1;
         }
