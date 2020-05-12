@@ -13,7 +13,7 @@ req.get(endpoint, function (err, res, data) {
     const obj = JSON.parse(data);
     console.log(obj.title);
   } else {
-    const rtfm = 'The Force Awakens'
+    const rtfm = 'The Force Awakens';
     console.log(rtfm);
   }
 });
