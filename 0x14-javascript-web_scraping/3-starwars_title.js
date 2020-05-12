@@ -12,5 +12,7 @@ req.get(endpoint, function (err, res, data) {
     console.log(obj.title);
   } else if (err) {
     console.log(err);
+  } else {
+    console.log('The Force Awakens');
   }
 });
