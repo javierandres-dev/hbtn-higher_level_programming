@@ -26,13 +26,13 @@ by _Guillaume_
 * [Create an Twitter application here](https://developer.twitter.com/en/apps)
 
 ## Tasks
-* [ ] 0. Readme
-* [ ] 1. Write me
-* [ ] 2. Status code
-* [ ] 3. Star wars movie title
-* [ ] 4. Star wars Wedge Antilles
-* [ ] 5. Loripsum
-* [ ] 6. How many completed?
+* [x] 0. Readme
+* [x] 1. Write me
+* [x] 2. Status code
+* [x] 3. Star wars movie title
+* [x] 4. Star wars Wedge Antilles
+* [x] 5. Loripsum
+* [x] 6. How many completed?
 * [ ] 7. Who was playing in this movie?
 * [ ] 8. Right order
 * [ ] 9. Twitter Auth

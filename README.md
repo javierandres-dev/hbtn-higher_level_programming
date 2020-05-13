@@ -30,7 +30,7 @@ At the end of this project, you are expected to be able to...
 * [x] 300 0x11. Python - Network #1
 * [x] 303 0x12. Javascript - Warm up
 * [x] 304 0x13. Javascript - Objects, Scopes and Closures
-* [ ] 333 0x14. Javascript - Web scraping
+* [x] 333 0x14. Javascript - Web scraping
 
 ## Developer
 Javier Andrés Garzón Patarroyo
