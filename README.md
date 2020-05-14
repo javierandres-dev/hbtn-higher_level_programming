@@ -1,14 +1,8 @@
 # Foundations
-Higher-level programming
-
-###### :copyright:
-**[Holberton School](https://www.holbertonschool.com/)**
-
-###### Global Objective
-At the end of this project, you are expected to be able to...
-- ...[explain to anyone](https://fs.blog/2012/04/feynman-technique/)
-
-## holbertonschool-higher_level_programming
+###### :copyright: **[Holberton School](https://www.holbertonschool.com/)**
+## Higher-level programming
+###### Projects
+:open_file_folder: holbertonschool-higher_level_programming
 * [x] 231 0x00. Python - Hello, World
 * [x] 233 0x01. Python - if/else, loops, functions
 * [x] 239 0x02. Python - import & modules
@@ -31,9 +25,11 @@ At the end of this project, you are expected to be able to...
 * [x] 303 0x12. Javascript - Warm up
 * [x] 304 0x13. Javascript - Objects, Scopes and Closures
 * [x] 333 0x14. Javascript - Web scraping
+* [ ] 305 0x15. Javascript - Web JQuery
 
 ## Developer
 Javier Andrés Garzón Patarroyo
-- [website](https://tecnoayuda.co/)
+- :octocat: [GitHub](https://github.com/javierandresgp/)
+- :link: [Linkedin](https://www.linkedin.com/in/javierandresgp/)
 
 :man_technologist: :books: :computer: :globe_with_meridians:
