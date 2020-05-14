@@ -9,10 +9,9 @@ window.onload = function () {
     }
   });
 };
-
 function showHello () {
-  const lan = $('INPUT#language_code').val();
-  $.get('https://fourtonfish.com/hellosalut/?lang=' + lan, function (data, textStatus) {
-    $('DIV#hello').text(data.hello);
+  const language = $('INPUT#language_code').val();
+  $.get('https://fourtonfish.com/hellosalut/?lang=' + language, function (say, textStatus) {
+    $('DIV#hello').text(say.hello);
   });
 }
