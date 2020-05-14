@@ -60,20 +60,20 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 | 12. Say hello to everybody! | Write a Javascript script that fetches and prints how to say “Hello” depending of the language |
 | 13. And press ENTER | Write a Javascript script that fetches and prints how to say “Hello” depending of the language |
 ###### Completed
-- [ ] 0.
-- [ ] 1.
-- [ ] 2.
-- [ ] 3.
-- [ ] 4.
-- [ ] 5.
-- [ ] 6.
-- [ ] 7.
-- [ ] 8.
-- [ ] 9.
-- [ ] 10.
-- [ ] 11.
-- [ ] 12.
-- [ ] 13.
+- [x] 0.
+- [x] 1.
+- [x] 2.
+- [x] 3.
+- [x] 4.
+- [x] 5.
+- [x] 6.
+- [x] 7.
+- [x] 8.
+- [x] 9.
+- [x] 10.
+- [x] 11.
+- [x] 12.
+- [x] 13.
 
 ## Developer
 Javier Andrés Garzón Patarroyo

@@ -25,7 +25,7 @@
 * [x] 303 0x12. Javascript - Warm up
 * [x] 304 0x13. Javascript - Objects, Scopes and Closures
 * [x] 333 0x14. Javascript - Web scraping
-* [ ] 305 0x15. Javascript - Web JQuery
+* [x] 305 0x15. Javascript - Web JQuery
 
 ## Developer
 Javier Andrés Garzón Patarroyo
